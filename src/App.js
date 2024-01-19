@@ -90,7 +90,7 @@ const App = () => {
       <Modal/>
       <DarkMode toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}/>
    <Routes> 
-     <Route path="/IntrodYOUceFinalapp" element={<Home />}/>
+     <Route path="/" element={<Home />}/>
      <Route path="/about" element={<About />}/>
      <Route path="/products" element={<Products />}/>
      <Route path="/contact" element={<Contact />}/>
