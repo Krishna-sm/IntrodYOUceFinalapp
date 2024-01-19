@@ -83,7 +83,8 @@ const App = () => {
     
     
     <ThemeProvider theme={isDarkTheme ? Dark_theme:Light_theme}>
-    <Router>
+    <Router basename="/IntrodYOUceFinalapp">
+
       <GlobalStyle/>  
       <Header/>
       <Modal/>
