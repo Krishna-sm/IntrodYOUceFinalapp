@@ -1,0 +1,135 @@
+[
+    {
+        "id":1,
+        "img":"img url",
+        "name":"Lovely Dorcent",
+        "profession":"IP Engineer",
+        "statement":"I really appreciate myself for making a choice to buy this website , this really helped me a lot in making a reputed place in the IT section"
+        
+        
+    },
+    
+    {
+        "id":2,
+        "img":"img url",
+        "name":"Ankush Saini",
+        "profession":"Baker",
+        "statement":"The website I bought for my business is getting me a new crowd of customers daily , this website made me stand alone in crowd of traders"
+        
+        
+    },
+    {
+        "id":3,
+        "img":"img url",
+        "name":"Krutika Bhardwaj",
+        "profession":"Singing teacher",
+        "statement":"Since I've got this website for me ,I am getting more students for my singing classes I am lucky to connect with these passionate students , thanks to IntrodYOUce team"
+        
+    },
+    {
+        "id":4,
+        "img":"img url",
+        "name":"Narendra Modi",
+        "profession":"Politician",
+        "statement":"Bhaiyo and beheno , the work this website did for me while advertizing got me crores of voters and I became prime minister of the biggest democracy of the world"
+        
+        
+    },
+    
+    {
+        "id":5,
+        "img":"img url",
+        "name":"Rahul Gandhi",
+        "profession":"Politician",
+        "statement":"Even though I didn't made to the post of prime minister , but in the party I am , I have achieved this height"
+        
+        
+    },
+    {
+        "id":6,
+        "img":"img url",
+        "name":"Neerav Modi",
+        "profession":"Business man",
+        "statement":"Although I conducted many scams , but this website shows good about me and helped me dodge the anger of public "
+        
+    },
+    {
+        "id":7,
+        "img":"img url",
+        "name":"Nelson Mondella",
+        "profession":"Influencer",
+        "statement":"I was able to spread my voice to millions of people through this website , this proved to be really helpful for the moss movement i created"
+        
+        
+    },
+    
+    {
+        "id":8,
+        "img":"img url",
+        "name":"Chris gale",
+        "profession":"Cricketer",
+        "statement":"West indies team selectors weren't selecting me , then I bought this website for me and this website , rest all is in history "
+        
+        
+    },
+    {
+        "id":9,
+        "img":"img url",
+        "name":"Virat Kohli",
+        "profession":"Cricketer",
+        "statement":"My portfolio website creates fear in bowlers "
+        
+    },
+    
+    {
+        "id":10,
+        "img":"img url",
+        "name":"Shilpa Shetty",
+        "profession":"Actress",
+        "statement":"Although I am a good actress but this website gets me movies"
+        
+        
+    },
+    {
+        "id":11,
+        "img":"img url",
+        "name":"Arun Yadav",
+        "profession":"Engineer",
+        "statement":"I really appreciate myself for making a choice to buy this website , this really helped me a lot in making a reputed place in the IT section"
+        
+    },
+    {
+        "id":12,
+        "img":"img url",
+        "name":"Charles Babbage",
+        "profession":"Engineer",
+         "statement":"In my times I was really an intelligent guy , but this website got me funds for my products"
+        
+        
+    },
+    {
+        "id":13,
+        "img":"img url",
+        "name":"Arnold Clinton",
+        "profession":"Engineer",
+        "statement":"I really appreciate myself for making a choice to buy this website , this really helped me a lot in making a reputed place in the IT section"
+        
+    },
+    {
+        "id":14,
+        "img":"img url",
+        "name":"Anokhe Lal Saxena",
+        "profession":"Actor",
+        "statement":"Although I am a good actor but this website gets me T.V serials"
+        
+        
+    },
+    {
+        "id":15,
+        "img":"img url",
+        "name":"Chris Hemsworth",
+        "profession":"Actor",
+        "statement":"Although I am a good actor but this website gets me movies , they got me in Avengers due to this website"
+        
+    }
+]

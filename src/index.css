@@ -1,0 +1,88 @@
+:root{
+  --body_background: #fff;
+  --body_color :#000;
+  --link_color:navy;
+}
+
+[data-theme= "dark"]
+{
+  --body_background:#282c34 ;
+  --body_color :#fff;
+  --link_color:cyan;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.modal-wrapper {
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  background-color: rgba(189,189,189,0.9);
+  z-index: 9;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /* max-width: 30rem; */
+  padding: 2rem 3rem ;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  z-index: 99;
+}
+.modal-container h2{
+font-size: 2.4rem;
+font-family: "Work Sans", sans-serif;
+}
+.modal-container p{
+font-size: 1.4rem;
+margin: 1rem 0 2.4rem 0;
+line-height: 1.8rem;
+color:#212121;
+font-weight: 400;
+font-family: "Source Serif Pro", serif;
+}
+.modal-btn {
+  padding: 0.6rem 1.4rem;
+  font-size:1.4rem;
+  border:none;
+  border-radius: 0.3rem;
+  background-color: #212121;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Work sans",sans-serif;
+  float: right;
+}
+.modal-btn:hover {
+  border:#212121;
+  background-color: #FFF;
+  color: #212121;
+  transition: all 0.1s;
+}
+
+.Modal-scroll 
+{
+  overflow-y: hidden;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+  min-width: 250px;
+  min-height: 250px;
+}
