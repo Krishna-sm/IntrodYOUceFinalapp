@@ -83,14 +83,14 @@ const App = () => {
     
     
     <ThemeProvider theme={isDarkTheme ? Dark_theme:Light_theme}>
-    <Router basename="/IntrodYOUceFinalapp">
+    <Router basename={process.env.PUBLIC_URL}>
 
       <GlobalStyle/>  
       <Header/>
       <Modal/>
       <DarkMode toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}/>
    <Routes> 
-     <Route path="/" element={<Home />}/>
+     <Route path="/IntrodYOUceFinalapp" element={<Home />}/>
      <Route path="/about" element={<About />}/>
      <Route path="/products" element={<Products />}/>
      <Route path="/contact" element={<Contact />}/>
