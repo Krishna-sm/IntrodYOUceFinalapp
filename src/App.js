@@ -15,6 +15,8 @@ import Modal from './components/Modal';
 import DarkMode from "./components/DarkMode";
 import  LoginSignup  from "./components/LoginSignup";
 import  SignupLogin  from "./components/SignupLogin";
+import Success from './components/Success';
+import Failure from './components/failure';
 
 const App = () => {
 
@@ -98,6 +100,8 @@ const App = () => {
      <Route path="/cart" element={<Cart />}/>
      <Route path="/login" element={<LoginSignup />}/>
      <Route path="/signup" element={<SignupLogin />}/>
+     <Route path='/success' element={<Success/>} />
+     <Route path='/failure' element={<Failure/>} />
      <Route path="/*" element={<ErrorPage />}/>
    </Routes>
    <Footer/>

@@ -4,9 +4,29 @@ import CartItem from "./components/CartItem";
 import { NavLink } from "react-router-dom";
 import { Button } from "./styles/Button";
 import FormatPrice from "./Helpers/FormatPrice";
+import axios from "axios";
+import React,{useState} from 'react';
+import { useParams} from 'react-router-dom';
 
 
 const Cart = () => {
+  let params = useParams();
+
+  let sessionData = sessionStorage.getItem('userInfo');
+  let data = JSON.parse(sessionData)
+
+
+  
+  const initialValues = {
+    id:Math.floor(Math.random() * 1000000),
+    rest_name: params.restName,
+    name:(data?data.name:null),
+    email:(data?data.email:null),
+    cost:Math.floor(Math.random()*1000),
+    phone:(data?data.phone:null),
+    address:"Hon 12 sec 34"
+}
+const [values,setValues] = useState(initialValues);
   
   const { cart ,clearCart, total_price, shipping_fee} = useCartContext();
  if( cart.length === 0 )
@@ -19,6 +39,36 @@ const Cart = () => {
     </EmptyDiv>
    )
    
+ }
+
+ const CheckoutHandler = async({name,amount})=>{
+     const {data:{order}} = await axios.post("http://localhost:9120/payment/checkout",{
+      name,amount
+     })
+     var options = {
+      "key": "rzp_test_LyJ0i6pR9WyJin", // Enter the Key ID generated from the Dashboard
+      "amount": order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      "currency": order.currency,
+      "name": "IntrodYOUce",
+      "description": "Test Transaction",
+      "image": "images/logo.png",
+      "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      "callback_url":"http://localhost:9120/payment/payment-verification",
+      "prefill": {
+          "name": values.name,
+          "email": values.email,
+          "contact": values.phone
+      },
+      "notes": {
+          "address": "Razorpay Corporate Office"
+      },
+      "theme": {
+          "color": "#3399cc"
+      }
+  };
+  var rzp1 = new window.Razorpay(options);
+    rzp1.open();
+
  }
  
   return (
@@ -35,7 +85,7 @@ const Cart = () => {
           
         <div className="cart-item">
           {cart.map((curElem) => {
-            return <CartItem key={curElem.id} {...curElem} />;
+            return <CartItem key={curElem.id} {...curElem} onCheckout={CheckoutHandler}/>;
           })}
         
         </div>

@@ -3,8 +3,9 @@ import FormatPrice from "../Helpers/FormatPrice";
 import CartAmountToggle from "./CartAmountToggle";
 import { FaTrash } from "react-icons/fa";
 import { useCartContext } from "../context/cart_context";
+import { Button } from "../styles/Button";
 
-const CartItem = ({ id, name, image, color, price, amount }) => {
+const CartItem = ({ id, name, image, color, price, amount ,onCheckout}) => {
   const { removeItem,setDecrease,setIncrease } = useCartContext();
 
 
@@ -43,7 +44,8 @@ const CartItem = ({ id, name, image, color, price, amount }) => {
       {/* //Subtotal */}
       <div className="cart-hide">
         <p>
-          <FormatPrice price={price * amount} />
+          {/* <FormatPrice price={price * amount} /> */}
+          <Button onClick={()=>onCheckout({name:name,amount:price})}>Buy Now </Button>
         </p>
       </div>
 
