@@ -2,7 +2,7 @@ require("dotenv").config();
 let mongo = require('mongodb');
 
 let {MongoClient} = require('mongodb');
-let mongoUrl = process.env.REACT_APP_API_MONGO_URL
+let mongoUrl ='mongodb://127.0.0.1:27017/react_razorpay'
 // mongodb local
 //when we write methods in mongodb we write it i curly braces
 let client = new MongoClient(mongoUrl);

@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-const url = process.env.REACT_APP_LOGIN_API_URL
+const url = process.env.REACT_APP_LOGIN_API_URL || `http://localhost:5001/api/auth`
 export const LoginSignup = () => {
 
   const [action,setAction] = useState("Login")
